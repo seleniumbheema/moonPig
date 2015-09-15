@@ -292,6 +292,23 @@ public class webConnector
 		}
 	}
 	
+	
+	//hideKeyboard
+	
+	public boolean hideKeyboard()
+	{
+		try
+		{
+			driver.hideKeyboard();
+			return true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();	
+			return false;
+		}
+	}
+	
 	//Touch_Action_WebElement_X_Y
 	public boolean Touch_action_webelement(String xPathType)
 	{

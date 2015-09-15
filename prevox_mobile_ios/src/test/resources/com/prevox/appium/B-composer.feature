@@ -3,7 +3,7 @@ Feature: Composing the text and sharing the message to your friends and follower
   
   In order to compose the text
   As a Mobile user
-  I want to Login in to Yubl application 
+  I want to Login in to Yubl application, and tap on Public
   So that I can access the features of the composer, profile and conversation
 
   #Developer : Anil Bheema

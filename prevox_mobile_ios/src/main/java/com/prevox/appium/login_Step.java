@@ -49,12 +49,6 @@ public class login_Step {
 		System.out.println("I click on "+ object);
 		connector.Click(object);
 	}	
-	@And("^I tap on \"([^\"]*)\" with name$")
-	public void I_tab_on(String object)
-	{
-		System.out.println("I click on "+ object+" with name");
-		connector.Click_name(object);
-	}
 	@And("^I click with \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void I_click_with(String x, String y)
 	{

@@ -7,7 +7,7 @@
     <property name="user.country.format" value="GB"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/BheemaA/documents/workspace/maven/prevox_mobile_ios"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/BheemaA/Documents/workspace/maven/prevox_mobile_ios"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
