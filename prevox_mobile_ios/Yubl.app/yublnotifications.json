@@ -1,0 +1,333 @@
+{
+    "conversations" : [
+                       {
+                       "lastActive" : "2015\/02\/08 11:00:00",
+                       "users" : [
+                                  {
+                                  "userId":"20001",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/rq9prkupofi4r0m/Selfies640-01.png?dl=0",
+                                  "firstName":"Tom"
+                                  },
+                                  {
+                                  "userId":"20002",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/khc47x2bbwb31jd/Selfies640-02.png?dl=0",
+                                  "firstName":"Carl"
+                                  
+                                  }
+                                  ],
+                       "name" : "A custom groupname",
+                       "identifier" : "10001",
+                       "iconUrl" : "",
+                       "thumbUrl" : "https://dl.dropboxusercontent.com/s/e7hts752r4cmeme/25184989-boom--comic-speech-bubble-cartoon.jpg?dl=0",
+                       "yubls":[{
+                                "created":"2015\/01\/18 12:00:00",
+                                "creator":{
+                                "userId":"20001",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20001.png?dl=1",
+                                "firstName":"John"
+                                },
+                                "yublId":"40001",
+                                "yublURLString":"e739gphn1l79igw/40001.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF004400"
+                                }
+                                },
+                                {
+                                "created":"2015\/01\/18 13:00:00",
+                                "creator":{
+                                "userId":"20002",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20002.png?dl=1",
+                                "firstName":"Eran"
+                                },
+                                "yublId":"40002",
+                                "yublURLString":"i4ijsn5y3ph9qv1/40002.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF440000"
+                                }
+                                }
+                                ,{
+                                "created":"2015\/01\/18 14:00:00",
+                                "creator":{
+                                "userId":"20002",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20002.png?dl=1",
+                                "firstName":"Eran"
+                                },
+                                "yublId":"40003",
+                                "yublURLString":"2xogrbrxk71cuq4/40003.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF000044"
+                                }
+                                }
+                                ]
+                       },{
+                       "lastActive" : "2015\/02\/07 11:00:00",
+                       "users" : [
+                                  {
+                                  "userId":"20001",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/rq9prkupofi4r0m/Selfies640-01.png?dl=0",
+                                  "firstName":"Tom"
+                                  },
+                                  {
+                                  "userId":"20002",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/khc47x2bbwb31jd/Selfies640-02.png?dl=0",
+                                  "firstName":"Carl"
+                                  
+                                  },{
+                                  "userId":"20003",
+                                  "lastOnline":"2015\/01\/19 15:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/ces9tj2qgif0gfh/Selfies640-03.png?dl=0",
+                                  "firstName":"Matthew"
+                                  
+                                  },{
+                                  "userId":"20004",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/tj8y41ccy8visls/Selfies640-04.png?dl=0",
+                                  "firstName":"Oskars"
+                                  
+                                  },
+                                  {
+                                  "userId":"20005",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/rddfjffbq3baumh/Selfies640-05.png?dl=0",
+                                  "firstName":"Jason"
+                                  },
+                                  {
+                                  "userId":"20006",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/560m6eer7tn2dq3/Selfies640-06.png?dl=0",
+                                  "firstName":"Jozsef"
+                                  
+                                  },{
+                                  "userId":"20007",
+                                  "lastOnline":"2015\/01\/19 15:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/dcsosz10vrwfzbe/Selfies640-07.png?dl=0",
+                                  "firstName":"Gareth"
+                                  
+                                  },{
+                                  "userId":"20008",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/yu53qiypi51mz9z/Selfies640-08.png?dl=0",
+                                  "firstName":"Karlis"
+                                  
+                                  },
+                                  {
+                                  "userId":"20009",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/xh4lzr4sorcrbgm/Selfies640-09.png?dl=0",
+                                  "firstName":"Michaela"
+                                  },
+                                  {
+                                  "userId":"20010",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/ywfe6zib1gg6ght/Selfies640-10.png?dl=0",
+                                  "firstName":"Eran"
+                                  
+                                  },{
+                                  "userId":"20011",
+                                  "lastOnline":"2015\/01\/19 15:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/b2quluw7w2j90fd/Selfies640-11.png?dl=0",
+                                  "firstName":"James"
+                                  
+                                  },{
+                                  "userId":"20012",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/ysgsgmismau4mis/Selfies640-12.png?dl=0",
+                                  "firstName":"Jamal"
+                                  
+                                  },
+                                  {
+                                  "userId":"20013",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/yzjh07i3j4e9icl/Selfies640-13.png?dl=0",
+                                  "firstName":"Nick"
+                                  },
+                                  {
+                                  "userId":"20014",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/4mh0kumgf7jg5os/Selfies640-14.png?dl=0",
+                                  "firstName":"Michael"
+                                  
+                                  },{
+                                  "userId":"20015",
+                                  "lastOnline":"2015\/01\/19 15:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/yypi3p5s89bie7w/Selfies640-15.png?dl=0",
+                                  "firstName":"John"
+                                  
+                                  },{
+                                  "userId":"20016",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/cu0lwf06jbz9run/Selfies640-16.png?dl=0",
+                                  "firstName":"Jean"
+                                  
+                                  },
+                                  {
+                                  "userId":"20017",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/wae8n075euwmlff/Selfies640-17.png?dl=0",
+                                  "firstName":"Jan"
+                                  },
+                                  {
+                                  "userId":"20018",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/lghw7d32m62gcvc/Selfies640-18.png?dl=0",
+                                  "firstName":"Cliff"
+                                  
+                                  },{
+                                  "userId":"20019",
+                                  "lastOnline":"2015\/01\/19 15:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/tco2aeypig5k97f/Selfies640-19.png?dl=0",
+                                  "firstName":"Daniel"
+                                  
+                                  },{
+                                  "userId":"20020",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/b3fyfojm80q9dg2/Selfies640-20.png?dl=0",
+                                  "firstName":"Ben"
+                                  
+                                  },
+                                  {
+                                  "userId":"20021",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/ddib233unot2ktc/Selfies640-21.png?dl=0",
+                                  "firstName":"Hayder"
+                                  },
+                                  {
+                                  "userId":"20022",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/0lfy39azu5iivu6/Selfies640-22.png?dl=0",
+                                  "firstName":"Abdulazeez"
+                                  
+                                  },{
+                                  "userId":"20023",
+                                  "lastOnline":"2015\/01\/19 15:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/mfh6yrz1oxpa22x/Selfies640-23.png?dl=0",
+                                  "firstName":"Jonathan"
+                                  
+                                  }
+                                  ],
+                       "name" : "A custom groupname",
+                       "identifier" : "10002",
+                       "iconUrl" : "https://dl.dropboxusercontent.com/s/52vhcy4i20j6w0a/20004.png?dl=0",
+                       "thumbUrl" : "https://dl.dropboxusercontent.com/s/ow22vfhgppei0v8/20140819%20-%20public%20Yubls-03.png?dl=0",
+                       "yubls":[{
+                                "created":"2015\/01\/18 12:00:00",
+                                "creator":{
+                                "userId":"20001",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20001.png?dl=1",
+                                "firstName":"John"
+                                },
+                                "yublId":"40001",
+                                "yublURLString":"e739gphn1l79igw/40001.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF004400"
+                                }
+                                },
+                                {
+                                "created":"2015\/01\/18 13:00:00",
+                                "creator":{
+                                "userId":"20002",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20002.png?dl=1",
+                                "firstName":"Eran"
+                                },
+                                "yublId":"40002",
+                                "yublURLString":"i4ijsn5y3ph9qv1/40002.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF440000"
+                                }
+                                }
+                                ,{
+                                "created":"2015\/01\/18 14:00:00",
+                                "creator":{
+                                "userId":"20002",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20002.png?dl=1",
+                                "firstName":"Eran"
+                                },
+                                "yublId":"40003",
+                                "yublURLString":"2xogrbrxk71cuq4/40003.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF000044"
+                                }
+                                }
+                                ]
+                       },
+                       
+                       {
+                       "lastActive" : "2015\/02\/05 16:54:00",
+                       "users" : [
+                                  {
+                                  "userId":"20001",
+                                  "lastOnline":"2014\/12\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/rq9prkupofi4r0m/Selfies640-01.png?dl=0",
+                                  "firstName":"Tom"
+                                  },
+                                  {
+                                  "userId":"20002",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/khc47x2bbwb31jd/Selfies640-02.png?dl=0",
+                                  "firstName":"Carl"
+                                  
+                                  },{
+                                  "userId":"20003",
+                                  "lastOnline":"2015\/01\/19 15:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/ces9tj2qgif0gfh/Selfies640-03.png?dl=0",
+                                  "firstName":"Matthew"
+                                  
+                                  },{
+                                  "userId":"20004",
+                                  "lastOnline":"2015\/01\/18 12:00:00",
+                                  "profileIconUrl":"https://dl.dropboxusercontent.com/s/tj8y41ccy8visls/Selfies640-04.png?dl=0",
+                                  "firstName":"Oskars"
+                                  
+                                  }
+                                  ],
+                       "name" : "",
+                       "identifier" : "10003",
+                       "iconUrl" : "",
+                       "thumbUrl" : "https://dl.dropboxusercontent.com/s/6eplrcukbiz16q5/20140819%20-%20public%20Yubls-19.png?dl=0",
+                       "yubls":[{
+                                "created":"2014\/12\/18 12:00:00",
+                                "creator":{
+                                "userId":"20002",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20002.png?dl=1",
+                                "firstName":"Eran"
+                                },
+                                "yublId":"40011",
+                                "yublURLString":"e739gphn1l79igw/40001.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF000044"
+                                }
+                                },
+                                {
+                                "created":"2014\/12\/18 13:00:00",
+                                "creator":{
+                                "userId":"20001",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20001.png?dl=1",
+                                "firstName":"John"
+                                },
+                                "yublId":"40012",
+                                "yublURLString":"e739gphn1l79igw/40001.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF000044"
+                                }
+                                }
+                                ,{
+                                "created":"2014\/12\/18 14:00:00",
+                                "creator":{
+                                "userId":"20004",
+                                "profileIconUrl":"https://www.dropbox.com/s/769uaocmnz3q0xn/20004.png?dl=1",
+                                "firstName":"Hayder"
+                                },
+                                "yublId":"40013",
+                                "yublURLString":"e739gphn1l79igw/40001.json?dl=0",
+                                "placeholder":{
+                                "backgroundColor":"#FF000044"
+                                }
+                                }
+                                ]
+                       }
+                       ]
+}
