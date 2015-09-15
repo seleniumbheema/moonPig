@@ -31,6 +31,10 @@ public class composer_page {
 		
 	}
 	
+	public void git()
+	{
+		System.out.println("nothing for committing");
+	}
 
 }
 
