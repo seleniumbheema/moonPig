@@ -24,7 +24,7 @@ Feature: Composing the text and sharing the message to Public
     And I tap on "reTake" with name
     And I capture the picture with "<xCoordinate>" and "<yCoordinate>"
     And I click on "doneButtons"
-    And I tap on "nextButton" with name]
+    And I tap on "nextButton" with name
     When I tap on "shareWithEveryone" with name
     And Check I am on "homePublicPage" with "yublPublic"
     And I swipe on recentConversation
@@ -63,7 +63,7 @@ Feature: Composing the text and sharing the message to Public
     And I swipe on recentConversation
     When I click on "Menu"
     And I tap on "Profile" with name
-    And I get the value of "profileAfterfeeds"
+    And I get the value of "profileAfterfeeds" and assert the values
     And I tap on "profileBackButton" with name
     Then Check I am on "homePublicPage" with "yublPublic"
 

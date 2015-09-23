@@ -127,7 +127,7 @@ formatter.step({
   "line": 65
 });
 formatter.step({
-  "name": "I get the value of \"profileAfterfeeds\"",
+  "name": "I get the value of \"profileAfterfeeds\" and assert the values",
   "keyword": "And ",
   "line": 66
 });
@@ -298,7 +298,7 @@ formatter.step({
   "line": 65
 });
 formatter.step({
-  "name": "I get the value of \"profileAfterfeeds\"",
+  "name": "I get the value of \"profileAfterfeeds\" and assert the values",
   "keyword": "And ",
   "line": 66
 });
@@ -322,7 +322,7 @@ formatter.match({
   "location": "login_Step.I_go_to_Yubl(String)"
 });
 formatter.result({
-  "duration": 28581990000,
+  "duration": 28566402000,
   "status": "passed"
 });
 formatter.match({
@@ -339,7 +339,7 @@ formatter.match({
   "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "duration": 3722673000,
+  "duration": 3746686000,
   "status": "passed"
 });
 formatter.match({
@@ -352,7 +352,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 3851870000,
+  "duration": 3976669000,
   "status": "passed"
 });
 formatter.match({
@@ -365,7 +365,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 2343546000,
+  "duration": 2268028000,
   "status": "passed"
 });
 formatter.match({
@@ -378,7 +378,7 @@ formatter.match({
   "location": "public_composer_step.I_get_the_value_of(String)"
 });
 formatter.result({
-  "duration": 2457623000,
+  "duration": 2575642000,
   "status": "passed"
 });
 formatter.match({
@@ -391,7 +391,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 2318418000,
+  "duration": 2316079000,
   "status": "passed"
 });
 formatter.match({
@@ -404,7 +404,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 2334276000,
+  "duration": 2334659000,
   "status": "passed"
 });
 formatter.match({
@@ -417,7 +417,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 6189140000,
+  "duration": 6175909000,
   "status": "passed"
 });
 formatter.match({
@@ -430,7 +430,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 2500028000,
+  "duration": 2481980000,
   "status": "passed"
 });
 formatter.match({
@@ -443,7 +443,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 2998848000,
+  "duration": 2335836000,
   "status": "passed"
 });
 formatter.match({
@@ -460,7 +460,7 @@ formatter.match({
   "location": "composer_camera_step.I_capture_the_picture(String,String)"
 });
 formatter.result({
-  "duration": 728691000,
+  "duration": 1162017000,
   "status": "passed"
 });
 formatter.match({
@@ -473,7 +473,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 2355762000,
+  "duration": 2488527000,
   "status": "passed"
 });
 formatter.match({
@@ -490,7 +490,7 @@ formatter.match({
   "location": "composer_camera_step.I_capture_the_picture(String,String)"
 });
 formatter.result({
-  "duration": 1242911000,
+  "duration": 1140672000,
   "status": "passed"
 });
 formatter.match({
@@ -503,7 +503,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 4117014000,
+  "duration": 4130657000,
   "status": "passed"
 });
 formatter.match({
@@ -514,4 +514,115 @@ formatter.match({
     }
   ],
   "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2327489000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "shareWithEveryone",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2336412000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "homePublicPage",
+      "offset": 15
+    },
+    {
+      "val": "yublPublic",
+      "offset": 37
+    }
+  ],
+  "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
+});
+formatter.result({
+  "duration": 4795311000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "public_composer_step.I_swipe()"
+});
+formatter.result({
+  "duration": 2480380000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Menu",
+      "offset": 12
+    }
+  ],
+  "location": "login_Step.I_click_on(String)"
+});
+formatter.result({
+  "duration": 5941696000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Profile",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2759351000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "profileAfterfeeds",
+      "offset": 20
+    }
+  ],
+  "location": "public_composer_step.I_get_assertion(String)"
+});
+formatter.result({
+  "duration": 2479247000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "profileBackButton",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2268542000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "homePublicPage",
+      "offset": 15
+    },
+    {
+      "val": "yublPublic",
+      "offset": 37
+    }
+  ],
+  "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
+});
+formatter.result({
+  "duration": 4814590000,
+  "status": "passed"
+});
 });

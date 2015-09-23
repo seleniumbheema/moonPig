@@ -40,6 +40,9 @@ public class webConnector
 	public static IOSDriver driver = null;
 	public static DesiredCapabilities capabilities = null;
 	public static 	HashMap<String, Double> captureCameraCodes = new HashMap<String, Double>();
+/*	public int profilebeforefeedsValue = (Integer) null;
+	public int profileafterfeedsValue = (Integer) null;
+*/	
 	
 	//Constructor
 	public webConnector()
@@ -617,8 +620,21 @@ public class webConnector
 			return false;
 		}
 	}
-		
 	
+	public boolean profileAfterAssertion(String xpathType)
+	{
+		try{
+			List<WebElement> profilebeforeFeeds = driver.findElements(By.xpath(OR.getProperty(xpathType)));
+			int profileafterfeedsValue =profilebeforeFeeds.size();
+			System.out.println("profilebeforefeeds--> "+profileafterfeedsValue);
+			return true;
+			}
+		catch(Exception e){
+			e.printStackTrace();
+			System.out.println("Profile Before element not found");
+			return false;
+		}
+	}
 	
 	//AssertTrue- List of Conversations with expectedText
 	public boolean Tablecell_click_username(String xpathType, String text)
@@ -632,7 +648,6 @@ public class webConnector
 					{
 						cell.click();
 					}
-					
 			}
 			return true;
 		}catch(Exception e){

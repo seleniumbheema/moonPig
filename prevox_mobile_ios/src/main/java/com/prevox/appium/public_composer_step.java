@@ -32,4 +32,12 @@ public class public_composer_step {
 		System.out.println("I get the value of "+object);
 		connector.profilebefore(object);
 	}
+	
+	@And("^I get the value of \"([^\"]*)\" and assert the values$")
+	public void I_get_assertion(String object)
+	{
+		System.out.println("I get the value of "+object +" and assert the values");
+		connector.profileAfterAssertion(object);
+	}
+	
 }

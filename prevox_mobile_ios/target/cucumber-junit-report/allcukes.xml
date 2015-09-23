@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="95.902781">
+<testcase classname="Composing the text and sharing the message to Public" name="Send feeds to Public using composer- Camera - Live Back Camera_1" time="95.902781">
+<system-out><![CDATA[Given I go to Yubl app on "Bheema iPhone6 Test".............................passed
+And Check I am on "homePage" with "yublHome"................................passed
+And I click on "Menu".......................................................passed
+When I tap on "Profile" with name...........................................passed
+And I get the value of "profilebeforefeeds".................................passed
+And I tap on "profileBackButton" with name..................................passed
+When I tap on "Public" with name............................................passed
+And I click on "composer"...................................................passed
+When I tap on "cameraTool" with name........................................passed
+And I tap on "backCamera" with name.........................................passed
+And I capture the picture with "iPhone6xCoordinate" and "iphone6yCoordinate".passed
+And I tap on "reTake" with name.............................................passed
+And I capture the picture with "iPhone6xCoordinate" and "iphone6yCoordinate".passed
+And I click on "doneButtons"................................................passed
+And I tap on "nextButton" with name.........................................passed
+When I tap on "shareWithEveryone" with name.................................passed
+And Check I am on "homePublicPage" with "yublPublic"........................passed
+And I swipe on recentConversation...........................................passed
+When I click on "Menu"......................................................passed
+And I tap on "Profile" with name............................................passed
+And I get the value of "profileAfterfeeds" and assert the values............passed
+And I tap on "profileBackButton" with name..................................passed
+Then Check I am on "homePublicPage" with "yublPublic".......................passed
+]]></system-out>
+</testcase>
+</testsuite>
