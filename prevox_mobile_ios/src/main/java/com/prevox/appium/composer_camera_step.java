@@ -30,13 +30,13 @@ public class composer_camera_step {
 		System.out.println("I capture the picture with "+x+" and "+y +" for "+duration);
 		connector.Java_script_keycode_video(x, y, duration);
 	 }
-	 @And("^Select a \"([^\"]*)\" from gallery$")
+	 @And("^I Select a \"([^\"]*)\" from gallery$")
 	 	public void Select_the_photo(String object)
 	 	{
 		 System.out.println("Select a "+object+ " from gallery");
 		 composer.list_photos(object);
 	 	}
-	 @And("^Select a \"([^\"]*)\" from photogallery$")
+	 @And("^I Select a \"([^\"]*)\" from photogallery$")
 	 	public void Select_the_photo_gallery(String object)
 	 	{
 		 System.out.println("Select a "+object+ " from photoGallery");

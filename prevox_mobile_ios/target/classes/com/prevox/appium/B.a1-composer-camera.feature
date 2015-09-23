@@ -16,7 +16,7 @@ Feature: Composing the text and sharing the message to your friends and follower
     #And I check whether app is installed with "bundleID"
     And Check I am on "homePage" with "yublHome"
     And I click on "composer"
-    And I click on "cameraTool"
+    When I tap on "cameraTool" with name
     When I capture the picture with "<xCoordinate>" and "<yCoordinate>"
     And I click on "reTake"
     And I capture the picture with "<xCoordinate>" and "<yCoordinate>"

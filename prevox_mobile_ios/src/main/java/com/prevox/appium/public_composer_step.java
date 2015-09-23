@@ -20,4 +20,16 @@ public class public_composer_step {
 		System.out.println("I hide the keyboard");
 		connector.hideKeyboard();
 	}
+	@And("^I swipe on recentConversation$")
+	public void I_swipe()
+	{
+		System.out.println("I swipe on recentConversation");
+		connector.hashMap_swipe_up();
+	}
+	@And("^I get the value of \"([^\"]*)\"$")
+	public void I_get_the_value_of(String object)
+	{
+		System.out.println("I get the value of "+object);
+		connector.profilebefore(object);
+	}
 }

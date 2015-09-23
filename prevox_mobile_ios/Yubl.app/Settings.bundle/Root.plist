@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>Title</key>
-			<string>Servers</string>
+			<string>Select A Predefined Server</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -26,9 +26,39 @@
 			<key>Title</key>
 			<string>Location</string>
 			<key>Key</key>
-			<string>server_location</string>
+			<string>serverLocation</string>
 			<key>DefaultValue</key>
 			<string>0</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Custom server </string>
+			<key>Key</key>
+			<string>cut</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Or Use A Custom Server</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>API Address</string>
+			<key>Key</key>
+			<string>customAPIAddress</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>WebSocket Address</string>
+			<key>Key</key>
+			<string>customWSAddress</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

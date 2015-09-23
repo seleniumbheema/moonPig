@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("test/resources/com/prevox/appium/C.c-public-composer-sticker.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("test/resources/com/prevox/appium/C.a1-public-composer-camera-live.feature");
 formatter.feature({
   "id": "composing-the-text-and-sharing-the-message-to-public",
   "tags": [
     {
-      "name": "@SmokePubliccomposer",
+      "name": "@SmokePubliccomposerCamereLive",
       "line": 1
     }
   ],
@@ -13,112 +13,183 @@ formatter.feature({
   "line": 2
 });
 formatter.scenarioOutline({
-  "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--sticker",
-  "description": "",
-  "name": "Send feeds to Public using composer- Sticker",
-  "keyword": "Scenario Outline",
-  "line": 13,
-  "type": "scenario_outline",
-  "comments": [
+  "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--camera---live-back-camera",
+  "tags": [
     {
-      "value": "#Developer : Anil Bheema",
-      "line": 9
-    },
-    {
-      "value": "#As Industry Standards, this layer will be in src/test/resources folder with same package name as Step Definition layer",
-      "line": 10
-    },
-    {
-      "value": "#Writing BDD tests with Gerkin Syntax, Writing Possible input parameters in double quotes make it easy for cucumber to generate the glue code for the step files with the correct parameters from",
-      "line": 11
-    },
-    {
-      "value": "#Object Repository(OR and Config-properties)",
-      "line": 12
+      "name": "@SmokePubliccomposerCamereLiveBackCamera",
+      "line": 43
     }
-  ]
+  ],
+  "description": "",
+  "name": "Send feeds to Public using composer- Camera - Live Back Camera",
+  "keyword": "Scenario Outline",
+  "line": 44,
+  "type": "scenario_outline"
 });
 formatter.step({
   "name": "I go to Yubl app on \"\u003cmobileDevice\u003e\"",
   "keyword": "Given ",
-  "line": 14
+  "line": 46
 });
 formatter.step({
   "name": "Check I am on \"homePage\" with \"yublHome\"",
   "keyword": "And ",
-  "line": 15
+  "line": 47
+});
+formatter.step({
+  "name": "I click on \"Menu\"",
+  "keyword": "And ",
+  "line": 48
+});
+formatter.step({
+  "name": "I tap on \"Profile\" with name",
+  "keyword": "When ",
+  "line": 49
+});
+formatter.step({
+  "name": "I get the value of \"profilebeforefeeds\"",
+  "keyword": "And ",
+  "line": 50
+});
+formatter.step({
+  "name": "I tap on \"profileBackButton\" with name",
+  "keyword": "And ",
+  "line": 51
 });
 formatter.step({
   "name": "I tap on \"Public\" with name",
   "keyword": "When ",
-  "line": 16
+  "line": 52
 });
 formatter.step({
   "name": "I click on \"composer\"",
   "keyword": "And ",
-  "line": 17
+  "line": 53
 });
 formatter.step({
-  "name": "I click on \"stickerTool\"",
+  "name": "I tap on \"cameraTool\" with name",
   "keyword": "When ",
-  "line": 18
+  "line": 54
 });
 formatter.step({
-  "name": "I click on \"sticker\"",
+  "name": "I tap on \"backCamera\" with name",
   "keyword": "And ",
-  "line": 19
+  "line": 55
 });
 formatter.step({
-  "name": "I click on \"recursiveSticker\"",
+  "name": "I capture the picture with \"\u003cxCoordinate\u003e\" and \"\u003cyCoordinate\u003e\"",
   "keyword": "And ",
-  "line": 20
+  "line": 56
 });
 formatter.step({
-  "name": "I click on \"sendSticker\"",
+  "name": "I tap on \"reTake\" with name",
   "keyword": "And ",
-  "line": 21
+  "line": 57
+});
+formatter.step({
+  "name": "I capture the picture with \"\u003cxCoordinate\u003e\" and \"\u003cyCoordinate\u003e\"",
+  "keyword": "And ",
+  "line": 58
+});
+formatter.step({
+  "name": "I click on \"doneButtons\"",
+  "keyword": "And ",
+  "line": 59
+});
+formatter.step({
+  "name": "I tap on \"nextButton\" with name",
+  "keyword": "And ",
+  "line": 60
+});
+formatter.step({
+  "name": "I tap on \"shareWithEveryone\" with name",
+  "keyword": "When ",
+  "line": 61
+});
+formatter.step({
+  "name": "Check I am on \"homePublicPage\" with \"yublPublic\"",
+  "keyword": "And ",
+  "line": 62
+});
+formatter.step({
+  "name": "I swipe on recentConversation",
+  "keyword": "And ",
+  "line": 63
+});
+formatter.step({
+  "name": "I click on \"Menu\"",
+  "keyword": "When ",
+  "line": 64
+});
+formatter.step({
+  "name": "I tap on \"Profile\" with name",
+  "keyword": "And ",
+  "line": 65
+});
+formatter.step({
+  "name": "I get the value of \"profileAfterfeeds\"",
+  "keyword": "And ",
+  "line": 66
+});
+formatter.step({
+  "name": "I tap on \"profileBackButton\" with name",
+  "keyword": "And ",
+  "line": 67
+});
+formatter.step({
+  "name": "Check I am on \"homePublicPage\" with \"yublPublic\"",
+  "keyword": "Then ",
+  "line": 68
 });
 formatter.examples({
-  "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--sticker;",
+  "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--camera---live-back-camera;",
   "description": "",
   "name": "",
   "keyword": "Examples",
-  "line": 23,
+  "line": 70,
   "rows": [
     {
-      "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--sticker;;1",
+      "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--camera---live-back-camera;;1",
       "cells": [
-        "mobileDevice"
+        "mobileDevice",
+        "xCoordinate",
+        "yCoordinate"
       ],
-      "line": 24
+      "line": 71
     },
     {
-      "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--sticker;;2",
+      "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--camera---live-back-camera;;2",
       "cells": [
-        "iPhone 6"
+        "Bheema iPhone6 Test",
+        "iPhone6xCoordinate",
+        "iphone6yCoordinate"
       ],
-      "line": 25
+      "line": 72
     }
   ]
 });
 formatter.scenario({
-  "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--sticker;;2",
+  "id": "composing-the-text-and-sharing-the-message-to-public;send-feeds-to-public-using-composer--camera---live-back-camera;;2",
   "tags": [
     {
-      "name": "@SmokePubliccomposer",
+      "name": "@SmokePubliccomposerCamereLive",
       "line": 1
+    },
+    {
+      "name": "@SmokePubliccomposerCamereLiveBackCamera",
+      "line": 43
     }
   ],
   "description": "",
-  "name": "Send feeds to Public using composer- Sticker",
+  "name": "Send feeds to Public using composer- Camera - Live Back Camera",
   "keyword": "Scenario Outline",
-  "line": 25,
+  "line": 72,
   "type": "scenario"
 });
 formatter.step({
-  "name": "I go to Yubl app on \"iPhone 6\"",
+  "name": "I go to Yubl app on \"Bheema iPhone6 Test\"",
   "keyword": "Given ",
-  "line": 14,
+  "line": 46,
   "matchedColumns": [
     0
   ]
@@ -126,49 +197,132 @@ formatter.step({
 formatter.step({
   "name": "Check I am on \"homePage\" with \"yublHome\"",
   "keyword": "And ",
-  "line": 15
+  "line": 47
+});
+formatter.step({
+  "name": "I click on \"Menu\"",
+  "keyword": "And ",
+  "line": 48
+});
+formatter.step({
+  "name": "I tap on \"Profile\" with name",
+  "keyword": "When ",
+  "line": 49
+});
+formatter.step({
+  "name": "I get the value of \"profilebeforefeeds\"",
+  "keyword": "And ",
+  "line": 50
+});
+formatter.step({
+  "name": "I tap on \"profileBackButton\" with name",
+  "keyword": "And ",
+  "line": 51
 });
 formatter.step({
   "name": "I tap on \"Public\" with name",
   "keyword": "When ",
-  "line": 16
+  "line": 52
 });
 formatter.step({
   "name": "I click on \"composer\"",
   "keyword": "And ",
-  "line": 17
+  "line": 53
 });
 formatter.step({
-  "name": "I click on \"stickerTool\"",
+  "name": "I tap on \"cameraTool\" with name",
   "keyword": "When ",
-  "line": 18
+  "line": 54
 });
 formatter.step({
-  "name": "I click on \"sticker\"",
+  "name": "I tap on \"backCamera\" with name",
   "keyword": "And ",
-  "line": 19
+  "line": 55
 });
 formatter.step({
-  "name": "I click on \"recursiveSticker\"",
+  "name": "I capture the picture with \"iPhone6xCoordinate\" and \"iphone6yCoordinate\"",
   "keyword": "And ",
-  "line": 20
+  "line": 56,
+  "matchedColumns": [
+    1,
+    2
+  ]
 });
 formatter.step({
-  "name": "I click on \"sendSticker\"",
+  "name": "I tap on \"reTake\" with name",
   "keyword": "And ",
-  "line": 21
+  "line": 57
+});
+formatter.step({
+  "name": "I capture the picture with \"iPhone6xCoordinate\" and \"iphone6yCoordinate\"",
+  "keyword": "And ",
+  "line": 58,
+  "matchedColumns": [
+    1,
+    2
+  ]
+});
+formatter.step({
+  "name": "I click on \"doneButtons\"",
+  "keyword": "And ",
+  "line": 59
+});
+formatter.step({
+  "name": "I tap on \"nextButton\" with name",
+  "keyword": "And ",
+  "line": 60
+});
+formatter.step({
+  "name": "I tap on \"shareWithEveryone\" with name",
+  "keyword": "When ",
+  "line": 61
+});
+formatter.step({
+  "name": "Check I am on \"homePublicPage\" with \"yublPublic\"",
+  "keyword": "And ",
+  "line": 62
+});
+formatter.step({
+  "name": "I swipe on recentConversation",
+  "keyword": "And ",
+  "line": 63
+});
+formatter.step({
+  "name": "I click on \"Menu\"",
+  "keyword": "When ",
+  "line": 64
+});
+formatter.step({
+  "name": "I tap on \"Profile\" with name",
+  "keyword": "And ",
+  "line": 65
+});
+formatter.step({
+  "name": "I get the value of \"profileAfterfeeds\"",
+  "keyword": "And ",
+  "line": 66
+});
+formatter.step({
+  "name": "I tap on \"profileBackButton\" with name",
+  "keyword": "And ",
+  "line": 67
+});
+formatter.step({
+  "name": "Check I am on \"homePublicPage\" with \"yublPublic\"",
+  "keyword": "Then ",
+  "line": 68
 });
 formatter.match({
   "arguments": [
     {
-      "val": "iPhone 6",
+      "val": "Bheema iPhone6 Test",
       "offset": 21
     }
   ],
   "location": "login_Step.I_go_to_Yubl(String)"
 });
 formatter.result({
-  "duration": 28221456000,
+  "duration": 28581990000,
   "status": "passed"
 });
 formatter.match({
@@ -185,7 +339,59 @@ formatter.match({
   "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "duration": 627937000,
+  "duration": 3722673000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Menu",
+      "offset": 12
+    }
+  ],
+  "location": "login_Step.I_click_on(String)"
+});
+formatter.result({
+  "duration": 3851870000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Profile",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2343546000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "profilebeforefeeds",
+      "offset": 20
+    }
+  ],
+  "location": "public_composer_step.I_get_the_value_of(String)"
+});
+formatter.result({
+  "duration": 2457623000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "profileBackButton",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2318418000,
   "status": "passed"
 });
 formatter.match({
@@ -198,7 +404,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 380545000,
+  "duration": 2334276000,
   "status": "passed"
 });
 formatter.match({
@@ -211,59 +417,101 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 2670087000,
+  "duration": 6189140000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "stickerTool",
+      "val": "cameraTool",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2500028000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "backCamera",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2998848000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "iPhone6xCoordinate",
+      "offset": 28
+    },
+    {
+      "val": "iphone6yCoordinate",
+      "offset": 53
+    }
+  ],
+  "location": "composer_camera_step.I_capture_the_picture(String,String)"
+});
+formatter.result({
+  "duration": 728691000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "reTake",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 2355762000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "iPhone6xCoordinate",
+      "offset": 28
+    },
+    {
+      "val": "iphone6yCoordinate",
+      "offset": 53
+    }
+  ],
+  "location": "composer_camera_step.I_capture_the_picture(String,String)"
+});
+formatter.result({
+  "duration": 1242911000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "doneButtons",
       "offset": 12
     }
   ],
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 3238954000,
+  "duration": 4117014000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "sticker",
-      "offset": 12
+      "val": "nextButton",
+      "offset": 10
     }
   ],
-  "location": "login_Step.I_click_on(String)"
-});
-formatter.result({
-  "duration": 9562722000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "recursiveSticker",
-      "offset": 12
-    }
-  ],
-  "location": "login_Step.I_click_on(String)"
-});
-formatter.result({
-  "duration": 8357720000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "sendSticker",
-      "offset": 12
-    }
-  ],
-  "location": "login_Step.I_click_on(String)"
-});
-formatter.result({
-  "duration": 15716344000,
-  "status": "passed"
-});
+  "location": "public_composer_step.I_click_on_name(String)"
 });

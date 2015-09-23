@@ -14,12 +14,12 @@ Feature: Composing the text and sharing the message to your friends and follower
    # Given I go to Yubl app on "<mobileDevice>"
     And Check I am on "homePage" with "yublHome"
     And I click on "composer"
-    And I click on "cameraTool"
-    And I click on "gallery"
+    When I tap on "cameraTool" with name
+    And I tap on "gallery" with name
     When I click on "cameraRoll"
-    And Select a "photo" from photogallery
-    And I click on "confirm"
-    And I click on "nextPhotoButton"
+    And I Select a "photo" from photogallery
+   And I tap on "confirm" with name
+    And I tap on "nextButton" with name
     When I click on "firstPersonConversation" of conversation
     And I click on "sendToChat"
     And Check I am on "homePage" with "yublHome"

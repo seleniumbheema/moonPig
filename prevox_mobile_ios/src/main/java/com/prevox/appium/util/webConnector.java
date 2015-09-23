@@ -23,6 +23,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
@@ -102,12 +103,24 @@ public class webConnector
 			capabilities = new DesiredCapabilities();
 			capabilities.setCapability("appium-version", "1.0");
 			capabilities.setCapability("platformName", "iOS");
-			capabilities.setCapability("platformVersion", "8.1");
-			capabilities.setCapability("deviceName", "iPhone 5s sliver testphone");
+			capabilities.setCapability("platformVersion", "8.1.1");
+			capabilities.setCapability("deviceName", "Bheema iPhone6 Test");
 			File app = new File(System.getProperty("user.dir")+"//Yubl.app");
 			capabilities.setCapability("app", app.getAbsolutePath());
 			driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 			
+		}
+		
+		else if(DeviceType.equals("iPhone 5c Bheem"))
+		{
+			capabilities = new DesiredCapabilities();
+			capabilities.setCapability("appium-version", "1.0");
+			capabilities.setCapability("platformName", "iOS");
+			capabilities.setCapability("platformVersion", "8.3");
+			capabilities.setCapability("deviceName", "iPhone 5c Bheem");
+			File app = new File(System.getProperty("user.dir")+"//Yubl.app");
+			capabilities.setCapability("app", app.getAbsolutePath());
+			driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
@@ -256,12 +269,13 @@ public class webConnector
 	}
 	
 	//Java_Script_Keycodes
+	//to get x and y co-ordinates, go to Appium Inspector, click on precise tap, tap on the element you need
 	public static void Java_script_keycode(String x, String y)
 	{
 		try
 		{
-			captureCameraCodes.put("tapCount", new Double("1.0"));
-			captureCameraCodes.put("touchCount", new Double("1.0"));
+			captureCameraCodes.put("tapCount", new Double("1.0")); //no of time you want to tap, in this case one time
+			captureCameraCodes.put("touchCount", new Double("1.0")); //
 			captureCameraCodes.put("duration", new Double("0.1"));
 			captureCameraCodes.put("x", new Double(CONFIG.getProperty(x)));
 			captureCameraCodes.put("y", new Double(CONFIG.getProperty(y)));
@@ -273,6 +287,7 @@ public class webConnector
 			e.printStackTrace();
 		}
 	}
+	
 	//Java_Script_Keycodes
 	public static void Java_script_keycode_onsec(String x, String y)
 	{
@@ -448,6 +463,26 @@ public class webConnector
 	
 	
 	//AssertTrue- List of Conversations with expectedText
+	public boolean list_conversationsassert_Equals_firstelement(String text)
+	{
+		try{
+			List<WebElement> UIATableCell = driver.findElements(By.xpath("//UIATableCell/UIAStaticText[1]")); 
+			for(WebElement cell: UIATableCell)
+			{
+				String myelement = cell.getText();
+				Assert.assertEquals(myelement, CONFIG.getProperty(text));
+				
+			}
+			return true;
+		}catch(Exception e){
+			e.printStackTrace();
+			System.out.println("Assert xpath element in OR properties and Text Equals executing false results");
+			return false;
+		}
+	}
+	
+	
+	//AssertTrue- List of Conversations with expectedText
 	public boolean list_conversationsassert_Equals_thirdelement(String xpathType, String text)
 	{
 		try{
@@ -566,6 +601,23 @@ public class webConnector
 		}
 	}
 	
+	//Profile_public_used
+	
+	public boolean profilebefore(String xpathType)
+	{
+		try{
+			List<WebElement> profilebeforeFeeds = driver.findElements(By.xpath(OR.getProperty(xpathType)));
+			int profilebeforefeedsValue = profilebeforeFeeds.size();
+			System.out.println("profilebeforefeeds--> "+profilebeforefeedsValue);
+			return true;
+			}
+		catch(Exception e){
+			e.printStackTrace();
+			System.out.println("Profile Before element not found");
+			return false;
+		}
+	}
+		
 	
 	
 	//AssertTrue- List of Conversations with expectedText
@@ -589,6 +641,26 @@ public class webConnector
 			return false;
 		}
 	}
+	
+	//swipping- hashMap
+	public boolean hashMap_swipe_up()
+	{
+		try{
+			WebElement element=driver.findElement(By.className("UIATableCell"));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			HashMap scrollObject = new HashMap();
+			scrollObject.put("direction", "up");
+			scrollObject.put("element", ((RemoteWebElement) element).getId());
+			js.executeScript("mobile: scroll", scrollObject);
+			return true;
+		}catch(Exception e){
+			e.printStackTrace();
+			System.out.println("Swiping the element has failed");
+			return false;
+		}
+	}
+	
+	
 	//Screenshot
 	public boolean screenShot(String screenShotPath)
 	{
@@ -609,6 +681,7 @@ public class webConnector
 	    }
 		
 	}
+	
 	
 	public boolean screenshot_compare(String screenShotResultPath, String screenShotSourceFilePath) throws InterruptedException, IOException
 	{

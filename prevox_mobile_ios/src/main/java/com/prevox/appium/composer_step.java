@@ -44,6 +44,12 @@ public class composer_step {
 		connector.list_conversationsassert_Equals_thirdelement(xpath, text);
 	}
 	
+	@And("^I check yublPublicConversation with \"([^\"]*)\" on publicfeeds$")
+	public void I_check_publicText_with_Yubltext(String text) {
+		System.out.println("I check yublPublicConversation with " + text
+				+ " on publicfeeds");
+		connector.list_conversationsassert_Equals_firstelement(text);
+	}
 	@And("^I check \"([^\"]*)\" with \"([^\"]*)\"$")
 	public void assert_Equals_Text(String xpath, String text) {
 		System.out.println("I check " + xpath + " with " + text);

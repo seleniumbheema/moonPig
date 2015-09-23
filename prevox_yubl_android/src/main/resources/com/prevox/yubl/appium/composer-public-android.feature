@@ -21,7 +21,13 @@ Feature: Composing the text and sharing the message to your friends and follower
     And I enter "textToolView" as "composingText" with xpath
     And I click on "composerDoneButton"
     And I click on "composerSendButton"
+    And I click on ""
 
     Examples: 
       | mobileDevice |
       | Galaxy S5    |
+
+      
+      
+      
+      ### Refer Appium_ios_arch_andriod_public_composer_texttool ####

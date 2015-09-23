@@ -31,12 +31,6 @@ public class composer_page {
 		
 	}
 	
-	public void git()
-	{
-		System.out.println("learning git very fast");
-		System.out.println("adding new line");
-	}
-
 }
 
 

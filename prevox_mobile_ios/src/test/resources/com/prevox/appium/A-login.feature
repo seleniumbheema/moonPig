@@ -12,14 +12,15 @@ Feature: Logging in to the application and Sharing your information to stakehold
   #Object Repository(OR and Config-properties)
   Scenario Outline: Logining application
     Given I go to Yubl app on "<mobileDevice>"
-    And I click on "loginButton"
+    And I tap on "loginButton" with name
     And I enter "userName" as "<usernameText>"
     And I enter "passWord" as "<passwordText>"
-    And I click with "xNextcoordinate" and "yNextcoordinate"
+    # And I click with "xNextcoordinate" and "yNextcoordinate"
+    And I tap on "nextButton" with name
     Then I logged in "Successfully" to "yublHome"
 
     #And Click on "loginButton"
     #Then I logged in "Successfully"
     Examples: 
-      | mobileDevice | usernameText  | passwordText  |
-      | iPhone6      | usernameText1 | passwordText1 |
+      | mobileDevice    | usernameText  | passwordText  |
+      | Bheema iPhone6 Test | usernameText1 | passwordText1 |
