@@ -22,5 +22,5 @@ Feature: Logging in to the application and Sharing your information to stakehold
     #And Click on "loginButton"
     #Then I logged in "Successfully"
     Examples: 
-      | mobileDevice    | usernameText  | passwordText  |
-      | Bheema iPhone6 Test | usernameText1 | passwordText1 |
+      | mobileDevice | usernameText  | passwordText  |
+      | iPhone 6     | usernameText1 | passwordText1 |

@@ -31,6 +31,13 @@ public class composer_page {
 		
 	}
 	
+	public void list_videos_gallery(String object)
+	{
+		List<WebElement> videos = connector.list_webElements(object);
+		videos.get(videos.size()-1).click();
+		
+	}
+	
 }
 
 

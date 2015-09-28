@@ -58,7 +58,7 @@
 						<argument>html:target/cucumber-html-report</argument>
 						<argument>--tags</argument>
 						<!-- <argument>@Smoke2composer, @Smoke4composerVideoGallery, @Smoke6composerCameraGallery</argument> -->
-						<argument>@SmokePubliccomposerCamereLiveBackCamera</argument>
+						<argument>@Smoke4PubliccomposerVideoGallery, @Smoke4PubliccomposerVideoLive, @Smoke4PubliccomposerVideoLiveBackCamera</argument>
 						<argument>--glue</argument>
 						<argument>com/</argument>
 						<argument>src/</argument>

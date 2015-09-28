@@ -10,7 +10,7 @@ import cucumber.deps.com.thoughtworks.xstream.core.Caching;
 @RunWith(Cucumber.class)
 @Cucumber.Options(format={"html:ouput"},
 				features= "/Users/BheemaA/Documents/workspace/maven/prevox_mobile_ios/src/test/resources/com/prevox/appium",
-				tags = {"@SmokeCreateNewConversation"})
+				tags = {"@Smoke4PubliccomposerVideoGallery"})
 public class Runner 
 {
 

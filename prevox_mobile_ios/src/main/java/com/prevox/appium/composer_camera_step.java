@@ -36,11 +36,18 @@ public class composer_camera_step {
 		 System.out.println("Select a "+object+ " from gallery");
 		 composer.list_photos(object);
 	 	}
-	 @And("^I Select a \"([^\"]*)\" from photogallery$")
+	 @And("^I Select a \"([^\"]*)\" from photoGallery$")
 	 	public void Select_the_photo_gallery(String object)
 	 	{
 		 System.out.println("Select a "+object+ " from photoGallery");
 		 composer.list_photos_gallery(object);
+	 	}
+	 
+	 @And("^I Select a \"([^\"]*)\" from videoGallery$")
+	 	public void Select_the_video_gallery(String object)
+	 	{
+		 System.out.println("I Select a "+object+ " from videoGallery");
+		 composer.list_videos_gallery(object);
 	 	}
 	 
 	 @And("^Select a \"([^\"]*)\" from conversations$")

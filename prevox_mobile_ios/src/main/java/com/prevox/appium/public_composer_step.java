@@ -14,6 +14,22 @@ public class public_composer_step {
 		System.out.println("I tap on "+ object+" with name");
 		connector.Click_name(object);
 	}
+	
+	@And("^I tap on \"([^\"]*)\" with name for duration$")
+	public void I_click_on_name_duration(String object) throws InterruptedException
+	{
+		System.out.println("I tap on "+ object+" with name for duration");
+		connector.Click_name(object);
+		Thread.sleep(10000);
+	}
+	
+	@And("^I tap on \"([^\"]*)\" from Table$")
+	public void I_tap_on_Table(String object)
+	{
+		System.out.println("I tap on "+ object+" from Table");
+		connector.list_table_Videos(object);
+	}
+	
 	@And("^I hide the keyboard$")
 	public void hide_keyBoard()
 	{

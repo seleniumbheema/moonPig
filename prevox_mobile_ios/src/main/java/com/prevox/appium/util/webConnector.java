@@ -40,6 +40,8 @@ public class webConnector
 	public static IOSDriver driver = null;
 	public static DesiredCapabilities capabilities = null;
 	public static 	HashMap<String, Double> captureCameraCodes = new HashMap<String, Double>();
+	public static int profilebeforefeedsValue = 0;
+	public static Object profileafterfeedsValue = null;
 /*	public int profilebeforefeedsValue = (Integer) null;
 	public int profileafterfeedsValue = (Integer) null;
 */	
@@ -310,9 +312,7 @@ public class webConnector
 		}
 	}
 	
-	
 	//hideKeyboard
-	
 	public boolean hideKeyboard()
 	{
 		try
@@ -444,6 +444,30 @@ public class webConnector
 			return false;
 		else 
 				return true;
+	}
+	
+	//Select the Videos from TableCell. attribute value will be "Label"
+	public boolean list_table_Videos(String xpathType)
+	{
+		try{
+			List<WebElement> TableCell = driver.findElements(By.xpath("//UIATableCell/UIAStaticText"));
+			for(WebElement cell : TableCell)
+			{
+				String cellAttribute = cell.getAttribute(OR.getProperty(xpathType));
+				//System.out.println("cells " + cellAttribute);
+				if (cellAttribute.equals("Videos"))
+				{
+					cell.click();
+				}
+				/*else if (!cellAttribute.equals("Videos"))
+					System.out.println("No Videos in the Device, Please add one and reRun the Test");*/
+			}
+			return true;
+		}catch(Exception e){
+			e.printStackTrace();
+			System.out.println("Video Attribute xpath element in OR properties is getting false results");
+			return false;
+		}
 	}
 
 	
@@ -606,11 +630,11 @@ public class webConnector
 	
 	//Profile_public_used
 	
-	public boolean profilebefore(String xpathType)
+	public static boolean profilebefore(String xpathType)
 	{
 		try{
 			List<WebElement> profilebeforeFeeds = driver.findElements(By.xpath(OR.getProperty(xpathType)));
-			int profilebeforefeedsValue = profilebeforeFeeds.size();
+			profilebeforefeedsValue = profilebeforeFeeds.size();
 			System.out.println("profilebeforefeeds--> "+profilebeforefeedsValue);
 			return true;
 			}
@@ -621,12 +645,22 @@ public class webConnector
 		}
 	}
 	
-	public boolean profileAfterAssertion(String xpathType)
+	public static boolean profileAfterAssertion(String xpathType)
 	{
 		try{
-			List<WebElement> profilebeforeFeeds = driver.findElements(By.xpath(OR.getProperty(xpathType)));
-			int profileafterfeedsValue =profilebeforeFeeds.size();
-			System.out.println("profilebeforefeeds--> "+profileafterfeedsValue);
+			List<WebElement> profileafterFeeds = driver.findElements(By.xpath(OR.getProperty(xpathType)));
+			int profileafterfeedsValue =profileafterFeeds.size();
+			System.out.println("profilebeforefeedsVa--> " +profilebeforefeedsValue);
+			System.out.println("profileAfterfeeds--> "+profileafterfeedsValue);
+			if(profilebeforefeedsValue == profileafterfeedsValue - 1)
+			{
+				System.out.println("Successfully, Yubl has been sent in Public");
+			}
+			else if(profilebeforefeedsValue == profileafterfeedsValue)
+			{
+				System.out.println("Successfully, Yubl has been sent in Public, but the Values are Same, Because of Pagination issue in IOS");
+			}
+			//System.out.println("Values are different - Execution Passed");
 			return true;
 			}
 		catch(Exception e){
@@ -635,7 +669,7 @@ public class webConnector
 			return false;
 		}
 	}
-	
+
 	//AssertTrue- List of Conversations with expectedText
 	public boolean Tablecell_click_username(String xpathType, String text)
 	{

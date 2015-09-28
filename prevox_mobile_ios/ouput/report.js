@@ -1,29 +1,29 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("B.d-composer-createNewConversation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C.c-public-composer-video_gallery.feature");
 formatter.feature({
-  "id": "composing-in-conversation,-using-text-tool-using-single-element",
+  "id": "composing-the-text-and-sharing-the-message-to-your-friends-and-followers",
   "tags": [
     {
-      "name": "@SmokeCreateNewConversation",
+      "name": "@Smoke4PubliccomposerVideoGallery",
       "line": 1
     }
   ],
-  "description": "\nIn order to composing in conversation in textTool\nAs a Mobile user\nI want to Login in to Yubl application \nSo that I can access the features of the composer, profile and conversation",
-  "name": "Composing in conversation, Using text Tool using single element",
+  "description": "\nIn order to entering a Camera, taking a photo, upload picture from Gallery\nAs a Mobile user\nI want to Login in to Yubl application \nSo that I can access the features of the composer, profile and conversation",
+  "name": "Composing the text and sharing the message to your friends and followers",
   "keyword": "Feature",
   "line": 2
 });
 formatter.scenario({
-  "id": "composing-in-conversation,-using-text-tool-using-single-element;using-composer,-compose-some-text-on-text-tool-in-minicomposer;;2",
+  "id": "composing-the-text-and-sharing-the-message-to-your-friends-and-followers;using-composer,-upload-picture-from-gallery-and-send-to-first-person-in-your-conversation;;2",
   "tags": [
     {
-      "name": "@SmokeCreateNewConversation",
+      "name": "@Smoke4PubliccomposerVideoGallery",
       "line": 1
     }
   ],
   "description": "",
-  "name": "Using Composer, compose some text on Text tool in miniComposer",
+  "name": "Using Composer, upload picture from Gallery and send to first person in your conversation",
   "keyword": "Scenario Outline",
-  "line": 20,
+  "line": 45,
   "type": "scenario"
 });
 formatter.step({
@@ -40,9 +40,125 @@ formatter.step({
   "line": 15
 });
 formatter.step({
-  "name": "I click on \"createNewConversation\"",
+  "name": "I click on \"Menu\"",
   "keyword": "And ",
   "line": 16
+});
+formatter.step({
+  "name": "I tap on \"Profile\" with name",
+  "keyword": "When ",
+  "line": 17
+});
+formatter.step({
+  "name": "I get the value of \"profilebeforefeeds\"",
+  "keyword": "And ",
+  "line": 18
+});
+formatter.step({
+  "name": "I tap on \"profileBackButton\" with name",
+  "keyword": "And ",
+  "line": 19
+});
+formatter.step({
+  "name": "I tap on \"Public\" with name",
+  "keyword": "When ",
+  "line": 20
+});
+formatter.step({
+  "name": "I click on \"composer\"",
+  "keyword": "And ",
+  "line": 21
+});
+formatter.step({
+  "name": "I tap on \"cameraTool\" with name",
+  "keyword": "When ",
+  "line": 22
+});
+formatter.step({
+  "name": "I tap on \"gallery\" with name",
+  "keyword": "And ",
+  "line": 23
+});
+formatter.step({
+  "name": "I tap on \"Videos\" from Table",
+  "keyword": "When ",
+  "line": 24
+});
+formatter.step({
+  "name": "I Select a \"video\" from videoGallery",
+  "keyword": "And ",
+  "line": 25
+});
+formatter.step({
+  "name": "I tap on \"playButton\" with name for duration",
+  "keyword": "And ",
+  "line": 26
+});
+formatter.step({
+  "name": "I tap on \"Choose\" with name for duration",
+  "keyword": "And ",
+  "line": 27
+});
+formatter.step({
+  "name": "I tap on \"confirmButton\" with name for duration",
+  "keyword": "And ",
+  "line": 29,
+  "comments": [
+    {
+      "value": "#And I tap on \"bigPlayButton\" with name for duration",
+      "line": 28
+    }
+  ]
+});
+formatter.step({
+  "name": "I click on \"doneButtons\"",
+  "keyword": "And ",
+  "line": 30
+});
+formatter.step({
+  "name": "I tap on \"nextButton\" with name",
+  "keyword": "And ",
+  "line": 31
+});
+formatter.step({
+  "name": "I tap on \"shareWithEveryone\" with name",
+  "keyword": "When ",
+  "line": 32
+});
+formatter.step({
+  "name": "Check I am on \"homePublicPage\" with \"yublPublic\"",
+  "keyword": "And ",
+  "line": 33
+});
+formatter.step({
+  "name": "I click on \"Menu\"",
+  "keyword": "When ",
+  "line": 34
+});
+formatter.step({
+  "name": "I tap on \"Profile\" with name",
+  "keyword": "And ",
+  "line": 35
+});
+formatter.step({
+  "name": "I swipe on recentConversation",
+  "keyword": "And ",
+  "line": 36
+});
+formatter.step({
+  "name": "I get the value of \"profileAfterfeeds\"",
+  "keyword": "And ",
+  "line": 37
+});
+formatter.step({
+  "name": "I tap on \"profileBackButton\" with name",
+  "keyword": "And ",
+  "line": 38
+});
+formatter.step({
+  "name": "Check I am on \"homePublicPage\" with \"yublPublic\"",
+  "keyword": "Then ",
+  "line": 39
 });
 formatter.match({
   "arguments": [
@@ -54,9 +170,8 @@ formatter.match({
   "location": "login_Step.I_go_to_Yubl(String)"
 });
 formatter.result({
-  "duration": 30821928000,
-  "status": "failed",
-  "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.\nBuild info: version: \u00272.43.1\u0027, revision: \u00275163bceef1bc36d43f3dc0b83c88998168a363a0\u0027, time: \u00272014-09-10 09:43:55\u0027\nSystem info: host: \u0027Anils-MacBook-Pro.local\u0027, ip: \u0027169.254.141.25\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.1\u0027, java.version: \u00271.7.0_79\u0027\nDriver info: driver.version: IOSDriver\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:126)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:153)\n\tat io.appium.java_client.AppiumDriver.\u003cinit\u003e(AppiumDriver.java:109)\n\tat io.appium.java_client.ios.IOSDriver.\u003cinit\u003e(IOSDriver.java:23)\n\tat com.prevox.appium.util.webConnector.openApplication(webConnector.java:96)\n\tat com.prevox.appium.login_Step.I_go_to_Yubl(login_Step.java:43)\n\tat ✽.Given I go to Yubl app on \"iPhone 6\"(B.d-composer-createNewConversation.feature:14)\nCaused by: org.apache.http.NoHttpResponseException: 127.0.0.1:4723 failed to respond\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)\n\tat org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)\n\tat org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)\n\tat com.sun.proxy.$Proxy14.receiveResponseHeader(Unknown Source)\n\tat org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:233)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:126)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:153)\n\tat io.appium.java_client.AppiumDriver.\u003cinit\u003e(AppiumDriver.java:109)\n\tat io.appium.java_client.ios.IOSDriver.\u003cinit\u003e(IOSDriver.java:23)\n\tat com.prevox.appium.util.webConnector.openApplication(webConnector.java:96)\n\tat com.prevox.appium.login_Step.I_go_to_Yubl(login_Step.java:43)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat cucumber.runtime.Utils$1.call(Utils.java:34)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\n\tat cucumber.runtime.Utils.invoke(Utils.java:30)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:35)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:297)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:89)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:40)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:94)\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\n"
+  "duration": 26915825000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -72,250 +187,308 @@ formatter.match({
   "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 482337000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "createNewConversation",
+      "val": "Menu",
       "offset": 12
     }
   ],
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "id": "composing-in-conversation,-using-text-tool-using-single-element;select-three-random-users;;2",
-  "tags": [
-    {
-      "name": "@SmokeCreateNewConversation",
-      "line": 1
-    }
-  ],
-  "description": "",
-  "name": "Select Three random Users",
-  "keyword": "Scenario Outline",
-  "line": 27,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "I Select \"firstUserName\" from friendsList with UIAutomator",
-  "keyword": "When ",
-  "line": 23,
-  "matchedColumns": [
-    0
-  ]
+  "duration": 595547000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "firstUserName",
+      "val": "Profile",
       "offset": 10
     }
   ],
-  "location": "composer_createNewConversation_step.Check_whether_app_installed_or_not(String)"
+  "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 10003597000,
+  "duration": 973261000,
   "status": "passed"
-});
-formatter.scenario({
-  "id": "composing-in-conversation,-using-text-tool-using-single-element;select-three-random-users;;3",
-  "tags": [
-    {
-      "name": "@SmokeCreateNewConversation",
-      "line": 1
-    }
-  ],
-  "description": "",
-  "name": "Select Three random Users",
-  "keyword": "Scenario Outline",
-  "line": 28,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "I Select \"secondUserName\" from friendsList with UIAutomator",
-  "keyword": "When ",
-  "line": 23,
-  "matchedColumns": [
-    0
-  ]
 });
 formatter.match({
   "arguments": [
     {
-      "val": "secondUserName",
+      "val": "profilebeforefeeds",
+      "offset": 20
+    }
+  ],
+  "location": "public_composer_step.I_get_the_value_of(String)"
+});
+formatter.result({
+  "duration": 3038262000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "profileBackButton",
       "offset": 10
     }
   ],
-  "location": "composer_createNewConversation_step.Check_whether_app_installed_or_not(String)"
+  "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 10004005000,
+  "duration": 407659000,
   "status": "passed"
-});
-formatter.scenario({
-  "id": "composing-in-conversation,-using-text-tool-using-single-element;select-three-random-users;;4",
-  "tags": [
-    {
-      "name": "@SmokeCreateNewConversation",
-      "line": 1
-    }
-  ],
-  "description": "",
-  "name": "Select Three random Users",
-  "keyword": "Scenario Outline",
-  "line": 29,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "I Select \"thirdUserName\" from friendsList with UIAutomator",
-  "keyword": "When ",
-  "line": 23,
-  "matchedColumns": [
-    0
-  ]
 });
 formatter.match({
   "arguments": [
     {
-      "val": "thirdUserName",
+      "val": "Public",
       "offset": 10
     }
   ],
-  "location": "composer_createNewConversation_step.Check_whether_app_installed_or_not(String)"
+  "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 10005621000,
-  "status": "passed"
-});
-formatter.scenario({
-  "id": "composing-in-conversation,-using-text-tool-using-single-element;creating-and-delivering-yubl",
-  "description": "",
-  "name": "Creating and Delivering Yubl",
-  "keyword": "Scenario",
-  "line": 31,
-  "type": "scenario"
-});
-formatter.step({
-  "name": "I click on \"createChat\" with UIAutomator",
-  "keyword": "And ",
-  "line": 32
-});
-formatter.step({
-  "name": "I click on \"textToolComposer\"",
-  "keyword": "And ",
-  "line": 33
-});
-formatter.step({
-  "name": "I enter \"miniComposing\" as \"CreateNewConversationText\"",
-  "keyword": "And ",
-  "line": 34
-});
-formatter.step({
-  "name": "I click on \"sendComposed\"",
-  "keyword": "And ",
-  "line": 35
-});
-formatter.step({
-  "name": "I check \"actualNewlyComposedText\" with \"CreateNewConversationText\"",
-  "keyword": "Then ",
-  "line": 36
-});
-formatter.step({
-  "name": "I click on \"backButton\"",
-  "keyword": "And ",
-  "line": 37
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "createChat",
-      "offset": 12
-    }
-  ],
-  "location": "composer_step.I_click_on_automator(String)"
-});
-formatter.result({
-  "duration": 1216000,
+  "duration": 739210000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "textToolComposer",
+      "val": "composer",
       "offset": 12
     }
   ],
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 4723000,
+  "duration": 1754934000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "miniComposing",
-      "offset": 9
+      "val": "cameraTool",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 840521000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gallery",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 516440000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Videos",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_tap_on_Table(String)"
+});
+formatter.result({
+  "duration": 2056778000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "video",
+      "offset": 12
+    }
+  ],
+  "location": "composer_camera_step.Select_the_video_gallery(String)"
+});
+formatter.result({
+  "duration": 1021581000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "playButton",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name_duration(String)"
+});
+formatter.result({
+  "duration": 11022984000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Choose",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name_duration(String)"
+});
+formatter.result({
+  "duration": 10459878000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "confirmButton",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name_duration(String)"
+});
+formatter.result({
+  "duration": 10908548000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "doneButtons",
+      "offset": 12
+    }
+  ],
+  "location": "login_Step.I_click_on(String)"
+});
+formatter.result({
+  "duration": 693753000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "nextButton",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 720269000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "shareWithEveryone",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 772570000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "homePublicPage",
+      "offset": 15
     },
     {
-      "val": "CreateNewConversationText",
-      "offset": 28
+      "val": "yublPublic",
+      "offset": 37
     }
   ],
-  "location": "login_Step.I_enter(String,String)"
+  "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "duration": 1005693000,
+  "duration": 1142158000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "sendComposed",
+      "val": "Menu",
       "offset": 12
     }
   ],
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 1213000,
+  "duration": 1404271000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "actualNewlyComposedText",
-      "offset": 9
+      "val": "Profile",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 989635000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "public_composer_step.I_swipe()"
+});
+formatter.result({
+  "duration": 452464000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "profileAfterfeeds",
+      "offset": 20
+    }
+  ],
+  "location": "public_composer_step.I_get_the_value_of(String)"
+});
+formatter.result({
+  "duration": 1428842000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "profileBackButton",
+      "offset": 10
+    }
+  ],
+  "location": "public_composer_step.I_click_on_name(String)"
+});
+formatter.result({
+  "duration": 434142000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "homePublicPage",
+      "offset": 15
     },
     {
-      "val": "CreateNewConversationText",
-      "offset": 40
+      "val": "yublPublic",
+      "offset": 37
     }
   ],
-  "location": "composer_step.assert_Equals_Text(String,String)"
+  "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "duration": 1023000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "backButton",
-      "offset": 12
-    }
-  ],
-  "location": "login_Step.I_click_on(String)"
-});
-formatter.result({
-  "duration": 957000,
-  "status": "passed"
-});
-});tion": 837000,
+  "duration": 1554163000,
   "status": "passed"
 });
 });

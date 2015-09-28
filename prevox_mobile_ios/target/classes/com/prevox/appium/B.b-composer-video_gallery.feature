@@ -14,11 +14,11 @@ Feature: Composing the text and sharing the message to your friends and follower
     Given I go to Yubl app on "<mobileDevice>"
     And Check I am on "homePage" with "yublHome"
     And I click on "composer"
-    And I click on "cameraTool"
-    And I click on "gallery"
+    When I tap on "cameraTool" with name
+    And I tap on "gallery" with name  
     When I click on "videoGallery"
-    And Select a "video" from gallery
-    And I click on "videoPlayButton" for duration
+    And I Select a "video" from gallery
+    And I tap on "playButton" with name
     And I click on "Choose" for duration
     And I click on "confirm"
     And I click on "cameraDone" for duration
