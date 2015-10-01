@@ -12,7 +12,7 @@ Feature: Composing the text and sharing the message to your friends and follower
   #Object Repository(OR and Config-properties)
   Scenario Outline: Using Composer, compose some text on Text tool
     Given I go to Yubl app on "<mobileDevice>"
-    And Check I am on "homePage" with "yublHome"
+    And Check I am on "homePage" with "yublPrivate"
     And I click on "composer"
     And I enter "textTool" as "composingText"
     And I click on "Done"

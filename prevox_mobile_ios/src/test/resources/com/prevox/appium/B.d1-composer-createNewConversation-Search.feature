@@ -12,7 +12,7 @@ Feature: Composing in conversation, Using text Tool using single element
   #Object Repository(OR and Config-properties)
   Scenario Outline: Using Composer, compose some text on Text tool in miniComposer
     Given I go to Yubl app on "<mobileDevice>"
-    And Check I am on "homePage" with "yublHome"
+    And Check I am on "homePage" with "yublPrivate"
     And I click on "createNewConversation"
 
     Examples: 

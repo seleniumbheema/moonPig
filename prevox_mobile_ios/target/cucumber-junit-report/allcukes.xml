@@ -1,98 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="20.91935">
-<testcase classname="Composing the text and sharing the message to your friends and followers" name="Using Composer, upload video from Gallery and Share with everyone_1" time="0.884903">
-<failure message="org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a device to launch. You requested 'Bheema iPhone6 Test (8.1.1 Simulator)', but the available devices were: [&quot;iPad 2 (8.3 Simulator) [DA515FB2-B893-4916-AD01-CA21AB0494DE]&quot;,&quot;iPad Air (8.3 Simulator) [6FAF8007-1288-478A-8535-A3A3980238BA]&quot;,&quot;iPad Retina (8.3 Simulator) [33C484A2-D78B-4508-8BAB-4B424EC56002]&quot;,&quot;iPhone 4s (8.3 Simulator) [AA80AEEF-431F-419B-ACAB-7433F556D3A8]&quot;,&quot;iPhone 5 (8.3 Simulator) [DE5D0163-5DB6-4A33-90AD-51736EC9409E]&quot;,&quot;iPhone 5s (8.3 Simulator) [B02F134E-3BFF-4580-839F-75EA9F458EB6]&quot;,&quot;iPhone 6 (8.3 Simulator) [FDB1A976-241F-4072-8F49-3B7D11B734A1]&quot;,&quot;iPhone 6 Plus (8.3 Simulator) [E5A2B598-DCC8-4E32-98A7-097F60796967]&quot;]) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 653 milliseconds&#10;Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'&#10;System info: host: 'Anils-MacBook-Pro.local', ip: '169.254.73.228', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_79'&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:526)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)&#10;&#9;at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:109)&#10;&#9;at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:23)&#10;&#9;at com.prevox.appium.util.webConnector.openApplication(webConnector.java:115)&#10;&#9;at com.prevox.appium.login_Step.I_go_to_Yubl(login_Step.java:43)&#10;&#9;at ✽.Given I go to Yubl app on &quot;Bheema iPhone6 Test&quot;(test/resources/com/prevox/appium/C.c-public-composer-video_gallery.feature:14)&#10;"><![CDATA[Given I go to Yubl app on "Bheema iPhone6 Test".............................failed
-And Check I am on "homePage" with "yublHome"................................skipped
-And I click on "Menu".......................................................skipped
-When I tap on "Profile" with name...........................................skipped
-And I get the value of "profilebeforefeeds".................................skipped
-And I tap on "profileBackButton" with name..................................skipped
-When I tap on "Public" with name............................................skipped
-And I click on "composer"...................................................skipped
-When I tap on "cameraTool" with name........................................skipped
-And I tap on "gallery" with name............................................skipped
-When I tap on "Videos" from Table...........................................skipped
-And I Select a "video" from videoGallery....................................skipped
-And I tap on "playButton" with name for duration............................skipped
-And I tap on "Choose" with name for duration................................skipped
-And I tap on "bigPlayButton" with name for duration.........................skipped
-And I tap on "confirmButton" with name for duration.........................skipped
-And I click on "doneButtons"................................................skipped
-And I tap on "nextButton" with name.........................................skipped
-When I tap on "shareWithEveryone" with name.................................skipped
-And Check I am on "homePublicPage" with "yublPublic"........................skipped
-And I swipe on recentConversation...........................................skipped
-When I click on "Menu"......................................................skipped
-And I tap on "Profile" with name............................................skipped
-And I get the value of "profileAfterfeeds" and assert the values............skipped
-And I tap on "profileBackButton" with name..................................skipped
-Then Check I am on "homePublicPage" with "yublPublic".......................skipped
-
-StackTrace:
-org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a device to launch. You requested 'Bheema iPhone6 Test (8.1.1 Simulator)', but the available devices were: ["iPad 2 (8.3 Simulator) [DA515FB2-B893-4916-AD01-CA21AB0494DE]","iPad Air (8.3 Simulator) [6FAF8007-1288-478A-8535-A3A3980238BA]","iPad Retina (8.3 Simulator) [33C484A2-D78B-4508-8BAB-4B424EC56002]","iPhone 4s (8.3 Simulator) [AA80AEEF-431F-419B-ACAB-7433F556D3A8]","iPhone 5 (8.3 Simulator) [DE5D0163-5DB6-4A33-90AD-51736EC9409E]","iPhone 5s (8.3 Simulator) [B02F134E-3BFF-4580-839F-75EA9F458EB6]","iPhone 6 (8.3 Simulator) [FDB1A976-241F-4072-8F49-3B7D11B734A1]","iPhone 6 Plus (8.3 Simulator) [E5A2B598-DCC8-4E32-98A7-097F60796967]"]) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 653 milliseconds
-Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
-System info: host: 'Anils-MacBook-Pro.local', ip: '169.254.73.228', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.1', java.version: '1.7.0_79'
-Driver info: io.appium.java_client.ios.IOSDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
-	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:23)
-	at com.prevox.appium.util.webConnector.openApplication(webConnector.java:115)
-	at com.prevox.appium.login_Step.I_go_to_Yubl(login_Step.java:43)
-	at ✽.Given I go to Yubl app on "Bheema iPhone6 Test"(test/resources/com/prevox/appium/C.c-public-composer-video_gallery.feature:14)
-]]></failure>
-</testcase>
-<testcase classname="Composing the text and sharing the message to your friends and followers" name="Using Composer, upload video from Front Live Camera_1" time="10.017876">
-<system-out><![CDATA[And Check I am on "homePage" with "yublHome"................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="175.489227">
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="Using Composer, TextTool, Sticker, Video_1" time="37.592788">
+<system-out><![CDATA[Given I go to Yubl app on "iPhone 6"........................................passed
+And Check I am on "homePage" with "yublPrivate".............................passed
 And I click on "Menu".......................................................passed
 When I tap on "Profile" with name...........................................passed
 And I get the value of "profilebeforefeeds".................................passed
 And I tap on "profileBackButton" with name..................................passed
 When I tap on "Public" with name............................................passed
 And I click on "composer"...................................................passed
-When I tap on "cameraTool" with name........................................passed
-And I capture the video with "iPhone6xCoordinate" and "iphone6yCoordinate" for "minimumVideoDuration".passed
-And I tap on "bigPlayButton" with name for duration.........................passed
-And I click on "doneButtons"................................................passed
-And I tap on "nextButton" with name.........................................passed
-When I tap on "shareWithEveryone" with name.................................passed
-And Check I am on "homePublicPage" with "yublPublic"........................passed
-And I swipe on recentConversation...........................................passed
-When I click on "Menu"......................................................passed
-And I tap on "Profile" with name............................................passed
-And I get the value of "profileAfterfeeds" and assert the values............passed
-And I tap on "profileBackButton" with name..................................passed
-Then Check I am on "homePublicPage" with "yublPublic".......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Composing the text and sharing the message to your friends and followers" name="Using Composer, upload video from Front Live BackCamera_1" time="10.016571">
-<system-out><![CDATA[And Check I am on "homePage" with "yublHome"................................passed
-And I click on "Menu".......................................................passed
-When I tap on "Profile" with name...........................................passed
-And I get the value of "profilebeforefeeds".................................passed
-And I tap on "profileBackButton" with name..................................passed
-When I tap on "Public" with name............................................passed
-And I click on "composer"...................................................passed
-When I tap on "cameraTool" with name........................................passed
-And I tap on "backCamera" with name.........................................passed
-And I capture the video with "iPhone6xCoordinate" and "iphone6yCoordinate" for "minimumVideoDuration".passed
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="VideoTool" time="67.141734">
+<system-out><![CDATA[When I tap on "cameraTool" with name........................................passed
+And I tap on "gallery" with name for duration...............................passed
+When I tap on "Videos" from Table...........................................passed
+And I Select a "video" from videoGallery....................................passed
+And I tap on "playButton" with name for duration............................passed
+And I tap on "Choose" with name for duration................................passed
 And I tap on "bigPlayButton" with name for duration.........................passed
-And I click on "doneButtons"................................................passed
-And I tap on "nextButton" with name.........................................passed
+And I tap on "confirmButton" with name for duration.........................passed
+And I tap on "doneButton" with name.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="StickerTool" time="12.735843">
+<system-out><![CDATA[When I click on "stickerTool"...............................................passed
+And I click on "sticker"....................................................passed
+And I tap on "doneButton" with name.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="TextTool" time="43.669171">
+<system-out><![CDATA[When I click on "TextToolElement"...........................................passed
+And I enter "textTool" as "composingPublicText".............................passed
+And I tap on "doneButton" with name.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="ShareWithEveryone" time="14.349691">
+<system-out><![CDATA[And I tap on "nextButton" with name.........................................passed
 When I tap on "shareWithEveryone" with name.................................passed
 And Check I am on "homePublicPage" with "yublPublic"........................passed
 And I swipe on recentConversation...........................................passed
 When I click on "Menu"......................................................passed
 And I tap on "Profile" with name............................................passed
+And I swipe on recentConversation...........................................passed
 And I get the value of "profileAfterfeeds" and assert the values............passed
 And I tap on "profileBackButton" with name..................................passed
 Then Check I am on "homePublicPage" with "yublPublic".......................passed

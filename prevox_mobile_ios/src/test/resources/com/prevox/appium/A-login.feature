@@ -17,7 +17,7 @@ Feature: Logging in to the application and Sharing your information to stakehold
     And I enter "passWord" as "<passwordText>"
     # And I click with "xNextcoordinate" and "yNextcoordinate"
     And I tap on "nextButton" with name
-    Then I logged in "Successfully" to "yublHome"
+    Then I logged in "Successfully" to "yublPublic"
 
     #And Click on "loginButton"
     #Then I logged in "Successfully"

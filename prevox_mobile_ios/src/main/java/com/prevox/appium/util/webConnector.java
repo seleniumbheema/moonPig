@@ -650,15 +650,15 @@ public class webConnector
 		try{
 			List<WebElement> profileafterFeeds = driver.findElements(By.xpath(OR.getProperty(xpathType)));
 			int profileafterfeedsValue =profileafterFeeds.size();
-			System.out.println("profilebeforefeedsVa--> " +profilebeforefeedsValue);
+			System.out.println("profilebeforefeeds--> " +profilebeforefeedsValue);
 			System.out.println("profileAfterfeeds--> "+profileafterfeedsValue);
 			if(profilebeforefeedsValue == profileafterfeedsValue - 1)
 			{
-				System.out.println("Successfully, Yubl has been sent in Public");
+				System.out.println("Successfully, Yubl has been sent to Public");
 			}
 			else if(profilebeforefeedsValue == profileafterfeedsValue)
 			{
-				System.out.println("Successfully, Yubl has been sent in Public, but the Values are Same, Because of Pagination issue in IOS");
+				System.out.println("Successfully, Yubl has been sent to Public, but the Values are Same, Because of Pagination issue in IOS");
 			}
 			//System.out.println("Values are different - Execution Passed");
 			return true;
