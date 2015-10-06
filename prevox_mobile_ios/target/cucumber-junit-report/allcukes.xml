@@ -1,40 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="175.489227">
-<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="Using Composer, TextTool, Sticker, Video_1" time="37.592788">
-<system-out><![CDATA[Given I go to Yubl app on "iPhone 6"........................................passed
-And Check I am on "homePage" with "yublPrivate".............................passed
-And I click on "Menu".......................................................passed
-When I tap on "Profile" with name...........................................passed
-And I get the value of "profilebeforefeeds".................................passed
-And I tap on "profileBackButton" with name..................................passed
-When I tap on "Public" with name............................................passed
-And I click on "composer"...................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="14.082468">
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="Using Composer, TextTool, Sticker, Video_1" time="3.063108">
+<failure message="org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a device to launch. You requested 'iPhone (8.3 Simulator)', but the available devices were: [&quot;iPad 2 (9.0) [C09E4483-8058-4E09-9169-217F399E09D6]&quot;,&quot;iPad Air (9.0) [4CC8789B-1C19-4D72-AD05-D2A7F829FDFE]&quot;,&quot;iPad Air 2 (9.0) [5E408179-4721-453D-ACC2-CEB7407FCEEE]&quot;,&quot;iPad Retina (9.0) [CC2641E7-736F-4FCE-91A4-DF4C0A7DED2C]&quot;,&quot;iPhone 4s (9.0) [148EFC50-C717-4976-A843-0010AF0B1CAF]&quot;,&quot;iPhone 5 (9.0) [446099DC-223E-4608-914A-DBC0380042E8]&quot;,&quot;iPhone 5s (9.0) [6B92D76F-37B3-4F0C-B8D6-4EF05DB81548]&quot;,&quot;iPhone 6 (9.0) [AF6762C8-F35E-431A-AA6B-47AD68F311D2]&quot;,&quot;iPhone 6 (9.0) + Apple Watch - 38mm (2.0) [3AFA34DA-C8C7-4CF3-947E-821BC3889D77]&quot;,&quot;iPhone 6 Plus (9.0) [9F14DACC-99AD-4874-B8D8-F6869E04DCDA]&quot;,&quot;iPhone 6 Plus (9.0) + Apple Watch - 42mm (2.0) [81F5A7F9-6D88-4EEE-9389-58BDB86090DB]&quot;,&quot;iPhone 6s (9.0) [5E2F9DE9-50EC-409F-908D-CC8AD842E05B]&quot;,&quot;iPhone 6s Plus (9.0) [675C2032-FA50-46DD-A48E-97B015BBC4F9]&quot;]) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 2.66 seconds&#10;Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'&#10;System info: host: 'Anils-MacBook-Pro.local', ip: '169.254.78.79', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.7.0_79'&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:526)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)&#10;&#9;at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:109)&#10;&#9;at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:23)&#10;&#9;at com.prevox.appium.util.webConnector.openApplication(webConnector.java:102)&#10;&#9;at com.prevox.appium.login_Step.I_go_to_Yubl(login_Step.java:43)&#10;&#9;at ✽.Given I go to Yubl app on &quot;iPhone 6&quot;(test/resources/com/prevox/appium/C.d1-public-composer-mutlipleElementsVST.feature:20)&#10;"><![CDATA[Given I go to Yubl app on "iPhone 6"........................................failed
+And Check I am on "homePage" with "yublPrivate".............................skipped
+And I click on "Menu".......................................................skipped
+When I tap on "Profile" with name...........................................skipped
+And I get the value of "profilebeforefeeds".................................skipped
+And I tap on "profileBackButton" with name..................................skipped
+When I tap on "Public" with name............................................skipped
+And I click on "composer"...................................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a device to launch. You requested 'iPhone (8.3 Simulator)', but the available devices were: ["iPad 2 (9.0) [C09E4483-8058-4E09-9169-217F399E09D6]","iPad Air (9.0) [4CC8789B-1C19-4D72-AD05-D2A7F829FDFE]","iPad Air 2 (9.0) [5E408179-4721-453D-ACC2-CEB7407FCEEE]","iPad Retina (9.0) [CC2641E7-736F-4FCE-91A4-DF4C0A7DED2C]","iPhone 4s (9.0) [148EFC50-C717-4976-A843-0010AF0B1CAF]","iPhone 5 (9.0) [446099DC-223E-4608-914A-DBC0380042E8]","iPhone 5s (9.0) [6B92D76F-37B3-4F0C-B8D6-4EF05DB81548]","iPhone 6 (9.0) [AF6762C8-F35E-431A-AA6B-47AD68F311D2]","iPhone 6 (9.0) + Apple Watch - 38mm (2.0) [3AFA34DA-C8C7-4CF3-947E-821BC3889D77]","iPhone 6 Plus (9.0) [9F14DACC-99AD-4874-B8D8-F6869E04DCDA]","iPhone 6 Plus (9.0) + Apple Watch - 42mm (2.0) [81F5A7F9-6D88-4EEE-9389-58BDB86090DB]","iPhone 6s (9.0) [5E2F9DE9-50EC-409F-908D-CC8AD842E05B]","iPhone 6s Plus (9.0) [675C2032-FA50-46DD-A48E-97B015BBC4F9]"]) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.66 seconds
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Anils-MacBook-Pro.local', ip: '169.254.78.79', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.7.0_79'
+Driver info: io.appium.java_client.ios.IOSDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:23)
+	at com.prevox.appium.util.webConnector.openApplication(webConnector.java:102)
+	at com.prevox.appium.login_Step.I_go_to_Yubl(login_Step.java:43)
+	at ✽.Given I go to Yubl app on "iPhone 6"(test/resources/com/prevox/appium/C.d1-public-composer-mutlipleElementsVST.feature:20)
+]]></failure>
 </testcase>
-<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="VideoTool" time="67.141734">
-<system-out><![CDATA[When I tap on "cameraTool" with name........................................passed
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="VideoTool" time="10.005296">
+<failure message="java.lang.NullPointerException&#10;&#9;at com.prevox.appium.util.webConnector.list_webElements(webConnector.java:273)&#10;&#9;at com.prevox.appium.util.composer_page.list_videos_gallery(composer_page.java:36)&#10;&#9;at com.prevox.appium.composer_camera_step.Select_the_video_gallery(composer_camera_step.java:50)&#10;&#9;at ✽.And I Select a &quot;video&quot; from videoGallery(test/resources/com/prevox/appium/C.d1-public-composer-mutlipleElementsVST.feature:38)&#10;"><![CDATA[When I tap on "cameraTool" with name........................................passed
 And I tap on "gallery" with name for duration...............................passed
 When I tap on "Videos" from Table...........................................passed
-And I Select a "video" from videoGallery....................................passed
-And I tap on "playButton" with name for duration............................passed
-And I tap on "Choose" with name for duration................................passed
-And I tap on "bigPlayButton" with name for duration.........................passed
-And I tap on "confirmButton" with name for duration.........................passed
-And I tap on "doneButton" with name.........................................passed
-]]></system-out>
+And I Select a "video" from videoGallery....................................failed
+And I tap on "playButton" with name for duration............................skipped
+And I tap on "Choose" with name for duration................................skipped
+And I tap on "bigPlayButton" with name for duration.........................skipped
+And I tap on "confirmButton" with name for duration.........................skipped
+And I tap on "doneButton" with name.........................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.prevox.appium.util.webConnector.list_webElements(webConnector.java:273)
+	at com.prevox.appium.util.composer_page.list_videos_gallery(composer_page.java:36)
+	at com.prevox.appium.composer_camera_step.Select_the_video_gallery(composer_camera_step.java:50)
+	at ✽.And I Select a "video" from videoGallery(test/resources/com/prevox/appium/C.d1-public-composer-mutlipleElementsVST.feature:38)
+]]></failure>
 </testcase>
-<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="StickerTool" time="12.735843">
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="StickerTool" time="0.004545">
 <system-out><![CDATA[When I click on "stickerTool"...............................................passed
 And I click on "sticker"....................................................passed
 And I tap on "doneButton" with name.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="TextTool" time="43.669171">
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="TextTool" time="1.002956">
 <system-out><![CDATA[When I click on "TextToolElement"...........................................passed
 And I enter "textTool" as "composingPublicText".............................passed
 And I tap on "doneButton" with name.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="ShareWithEveryone" time="14.349691">
+<testcase classname="Composing the text and sharing the message to your friends and followers Using Multiple Elements" name="ShareWithEveryone" time="0.006563">
 <system-out><![CDATA[And I tap on "nextButton" with name.........................................passed
 When I tap on "shareWithEveryone" with name.................................passed
 And Check I am on "homePublicPage" with "yublPublic"........................passed

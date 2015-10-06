@@ -77,7 +77,7 @@ public class webConnector
 	//open_Application
 	public void openApplication(String DeviceType) throws MalformedURLException
 	{
-		if(DeviceType.equals("iPhone 5s sliver testphone"))
+		if(DeviceType.equalsIgnoreCase("iPhone 5s sliver testphone"))
 		{
 			capabilities = new DesiredCapabilities();
 			capabilities.setCapability("appium-version", "1.0");
@@ -90,12 +90,12 @@ public class webConnector
 			
 		}
 		//Stimulator iphone 6 and version 8.3
-		else if(DeviceType.equals("iPhone 6"))
+		else if(DeviceType.equalsIgnoreCase("iPhone 6"))
 		{
 			capabilities = new DesiredCapabilities();
 			capabilities.setCapability("appium-version", "1.0");
 			capabilities.setCapability("platformName", "iOS");
-			capabilities.setCapability("platformVersion", "8.3");
+			capabilities.setCapability("platformVersion", "9.0");
 			capabilities.setCapability("deviceName", "iPhone 6");
 			File app = new File(System.getProperty("user.dir")+"//Yubl.app");
 			capabilities.setCapability("app", app.getAbsolutePath());
@@ -103,7 +103,7 @@ public class webConnector
 			
 		}
 		
-		else if(DeviceType.equals("Bheema iPhone6 Test"))
+		else if(DeviceType.equalsIgnoreCase("Bheema iPhone6 Test"))
 		{
 			capabilities = new DesiredCapabilities();
 			capabilities.setCapability("appium-version", "1.0");
@@ -116,7 +116,7 @@ public class webConnector
 			
 		}
 		
-		else if(DeviceType.equals("iPhone 5c Bheem"))
+		else if(DeviceType.equalsIgnoreCase("iPhone 5c Bheem"))
 		{
 			capabilities = new DesiredCapabilities();
 			capabilities.setCapability("appium-version", "1.0");

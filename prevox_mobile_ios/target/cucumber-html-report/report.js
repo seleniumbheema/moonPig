@@ -175,8 +175,9 @@ formatter.match({
   "location": "login_Step.I_go_to_Yubl(String)"
 });
 formatter.result({
-  "duration": 28990281000,
-  "status": "passed"
+  "duration": 3063108000,
+  "status": "failed",
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a device to launch. You requested \u0027iPhone (8.3 Simulator)\u0027, but the available devices were: [\"iPad 2 (9.0) [C09E4483-8058-4E09-9169-217F399E09D6]\",\"iPad Air (9.0) [4CC8789B-1C19-4D72-AD05-D2A7F829FDFE]\",\"iPad Air 2 (9.0) [5E408179-4721-453D-ACC2-CEB7407FCEEE]\",\"iPad Retina (9.0) [CC2641E7-736F-4FCE-91A4-DF4C0A7DED2C]\",\"iPhone 4s (9.0) [148EFC50-C717-4976-A843-0010AF0B1CAF]\",\"iPhone 5 (9.0) [446099DC-223E-4608-914A-DBC0380042E8]\",\"iPhone 5s (9.0) [6B92D76F-37B3-4F0C-B8D6-4EF05DB81548]\",\"iPhone 6 (9.0) [AF6762C8-F35E-431A-AA6B-47AD68F311D2]\",\"iPhone 6 (9.0) + Apple Watch - 38mm (2.0) [3AFA34DA-C8C7-4CF3-947E-821BC3889D77]\",\"iPhone 6 Plus (9.0) [9F14DACC-99AD-4874-B8D8-F6869E04DCDA]\",\"iPhone 6 Plus (9.0) + Apple Watch - 42mm (2.0) [81F5A7F9-6D88-4EEE-9389-58BDB86090DB]\",\"iPhone 6s (9.0) [5E2F9DE9-50EC-409F-908D-CC8AD842E05B]\",\"iPhone 6s Plus (9.0) [675C2032-FA50-46DD-A48E-97B015BBC4F9]\"]) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.66 seconds\nBuild info: version: \u00272.43.1\u0027, revision: \u00275163bceef1bc36d43f3dc0b83c88998168a363a0\u0027, time: \u00272014-09-10 09:43:55\u0027\nSystem info: host: \u0027Anils-MacBook-Pro.local\u0027, ip: \u0027169.254.78.79\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.10.5\u0027, java.version: \u00271.7.0_79\u0027\nDriver info: io.appium.java_client.ios.IOSDriver\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:526)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:126)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:153)\n\tat io.appium.java_client.AppiumDriver.\u003cinit\u003e(AppiumDriver.java:109)\n\tat io.appium.java_client.ios.IOSDriver.\u003cinit\u003e(IOSDriver.java:23)\n\tat com.prevox.appium.util.webConnector.openApplication(webConnector.java:102)\n\tat com.prevox.appium.login_Step.I_go_to_Yubl(login_Step.java:43)\n\tat ✽.Given I go to Yubl app on \"iPhone 6\"(test/resources/com/prevox/appium/C.d1-public-composer-mutlipleElementsVST.feature:20)\n"
 });
 formatter.match({
   "arguments": [
@@ -192,8 +193,7 @@ formatter.match({
   "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "duration": 480545000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -205,8 +205,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 672903000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -218,8 +217,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 982009000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -231,8 +229,7 @@ formatter.match({
   "location": "public_composer_step.I_get_the_value_of(String)"
 });
 formatter.result({
-  "duration": 3505968000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -244,8 +241,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 415219000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -257,8 +253,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 752711000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -270,8 +265,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 1793152000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "description": "",
@@ -367,7 +361,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 839319000,
+  "duration": 3250000,
   "status": "passed"
 });
 formatter.match({
@@ -380,7 +374,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name_duration(String)"
 });
 formatter.result({
-  "duration": 10442429000,
+  "duration": 10000771000,
   "status": "passed"
 });
 formatter.match({
@@ -393,7 +387,7 @@ formatter.match({
   "location": "public_composer_step.I_tap_on_Table(String)"
 });
 formatter.result({
-  "duration": 924390000,
+  "duration": 887000,
   "status": "passed"
 });
 formatter.match({
@@ -406,8 +400,9 @@ formatter.match({
   "location": "composer_camera_step.Select_the_video_gallery(String)"
 });
 formatter.result({
-  "duration": 1551378000,
-  "status": "passed"
+  "duration": 388000,
+  "status": "failed",
+  "error_message": "java.lang.NullPointerException\n\tat com.prevox.appium.util.webConnector.list_webElements(webConnector.java:273)\n\tat com.prevox.appium.util.composer_page.list_videos_gallery(composer_page.java:36)\n\tat com.prevox.appium.composer_camera_step.Select_the_video_gallery(composer_camera_step.java:50)\n\tat ✽.And I Select a \"video\" from videoGallery(test/resources/com/prevox/appium/C.d1-public-composer-mutlipleElementsVST.feature:38)\n"
 });
 formatter.match({
   "arguments": [
@@ -419,8 +414,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name_duration(String)"
 });
 formatter.result({
-  "duration": 11436517000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -432,8 +426,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name_duration(String)"
 });
 formatter.result({
-  "duration": 10828766000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -445,8 +438,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name_duration(String)"
 });
 formatter.result({
-  "duration": 20269436000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -458,8 +450,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name_duration(String)"
 });
 formatter.result({
-  "duration": 10463382000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -471,8 +462,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 386117000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "description": "",
@@ -538,7 +528,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 1493227000,
+  "duration": 1173000,
   "status": "passed"
 });
 formatter.match({
@@ -551,7 +541,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 10814654000,
+  "duration": 836000,
   "status": "passed"
 });
 formatter.match({
@@ -564,7 +554,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 427962000,
+  "duration": 2536000,
   "status": "passed"
 });
 formatter.background({
@@ -631,7 +621,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 9643485000,
+  "duration": 862000,
   "status": "passed"
 });
 formatter.match({
@@ -648,7 +638,7 @@ formatter.match({
   "location": "login_Step.I_enter(String,String)"
 });
 formatter.result({
-  "duration": 33567597000,
+  "duration": 1001201000,
   "status": "passed"
 });
 formatter.match({
@@ -661,7 +651,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 458089000,
+  "duration": 893000,
   "status": "passed"
 });
 formatter.background({
@@ -757,7 +747,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 1087969000,
+  "duration": 592000,
   "status": "passed"
 });
 formatter.match({
@@ -770,7 +760,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 1259707000,
+  "duration": 532000,
   "status": "passed"
 });
 formatter.match({
@@ -787,14 +777,14 @@ formatter.match({
   "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "duration": 1536746000,
+  "duration": 730000,
   "status": "passed"
 });
 formatter.match({
   "location": "public_composer_step.I_swipe()"
 });
 formatter.result({
-  "duration": 319789000,
+  "duration": 633000,
   "status": "passed"
 });
 formatter.match({
@@ -807,7 +797,7 @@ formatter.match({
   "location": "login_Step.I_click_on(String)"
 });
 formatter.result({
-  "duration": 2673917000,
+  "duration": 814000,
   "status": "passed"
 });
 formatter.match({
@@ -820,14 +810,14 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 1028880000,
+  "duration": 588000,
   "status": "passed"
 });
 formatter.match({
   "location": "public_composer_step.I_swipe()"
 });
 formatter.result({
-  "duration": 474804000,
+  "duration": 541000,
   "status": "passed"
 });
 formatter.match({
@@ -840,7 +830,7 @@ formatter.match({
   "location": "public_composer_step.I_get_assertion(String)"
 });
 formatter.result({
-  "duration": 1762875000,
+  "duration": 614000,
   "status": "passed"
 });
 formatter.match({
@@ -853,7 +843,7 @@ formatter.match({
   "location": "public_composer_step.I_click_on_name(String)"
 });
 formatter.result({
-  "duration": 451526000,
+  "duration": 692000,
   "status": "passed"
 });
 formatter.match({
@@ -870,7 +860,7 @@ formatter.match({
   "location": "composer_step.Check_I_am_on_homepage_with_Yubltext(String,String)"
 });
 formatter.result({
-  "duration": 3753478000,
+  "duration": 827000,
   "status": "passed"
 });
 });
